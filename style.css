@@ -93,6 +93,43 @@ nav{
 #search{
     width: 75%;
     padding: 10px;
-    background-color: #74c5e7;
+    background-color: #58b1d7;
     border: none;
+}
+.review-card{
+    width: 250px;
+    height: 300px;
+    box-shadow: 4px 4px 8px gray;
+    border-radius:10px;
+    text-align: center;
+    padding: 10px;
+}
+.review-card img{
+    width: 70px;
+    height: 70px;
+    border-radius:50px;
+}
+footer{
+    padding: 50px;
+ background: linear-gradient(66deg, #4CAFDB -5.25%,#2a7fa3 46.76%, #06587b 98.77%);;
+}
+.doctor-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    }
+.doc-details-container{
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        gap: 50px;
+        width: 75%;
+        margin: auto;
+    }
+.doc-detail-btn{
+    border: none;
+    padding:5px 10px;
+    background-color:gray;
+    color: white;
+    border-radius: 5px;
 }
