@@ -114,9 +114,9 @@ footer{
  background: linear-gradient(66deg, #4CAFDB -5.25%,#2a7fa3 46.76%, #06587b 98.77%);;
 }
 .doctor-img img{
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
     }
 .doc-details-container{
         display: flex;
