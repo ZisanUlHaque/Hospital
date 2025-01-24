@@ -1,3 +1,4 @@
+
 const handleRegistration = (event) => {
   event.preventDefault();
   const username = getValue("username");
