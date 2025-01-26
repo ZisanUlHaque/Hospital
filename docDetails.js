@@ -122,7 +122,37 @@ const loadPatientId = () => {
       localStorage.setItem("patient_id", data[0].id);
     });
 };
+const submitFeedback = () => {
+  const rating = document.querySelector(".stars .active")?.dataset.value || 0;
+  const comment = document.getElementById("feedback-text").value;
+  const doctorId = new URLSearchParams(window.location.search).get("doctorId");
+  const patientId = localStorage.getItem("patient_id");
+
+  if (!rating || !comment.trim()) {
+    alert("Please provide a rating and a comment.");
+    return;
+  }
+
+  const feedback = {
+    doctor_id: doctorId,
+    patient_id: patientId,
+    rating: parseInt(rating),
+    comment: comment,
+  };
+
+  fetch("https://testing-8az5.onrender.com/doctor/feedback/", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(feedback),
+  })
+    .then((res) => res.json())
+    .then(() => {
+      alert("Feedback submitted successfully!");
+      location.reload(); // Reload to fetch updated feedback
+    });
+};
 
 loadPatientId();
 getparams();
 loadTime();
+submitFeedback();

@@ -128,6 +128,26 @@
       </div>
     </div>
   </div>
+  <div class="feedback-container p-5 mt-5 w-75 m-auto text-center">
+    <h2 class="mb-4">Give Feedback to this Doctor</h2>
+    <div class="stars mb-3">
+      <span class="star" data-value="1">&#9733;</span>
+      <span class="star" data-value="2">&#9733;</span>
+      <span class="star" data-value="3">&#9733;</span>
+      <span class="star" data-value="4">&#9733;</span>
+      <span class="star" data-value="5">&#9733;</span>
+    </div>
+    <textarea
+      id="feedback-text"
+      class="form-control mb-4"
+      rows="4"
+      placeholder="Write your feedback here"
+    ></textarea>
+    <button class="btn btn-primary" onclick="submitFeedback()">Submit</button>
+  
+    <div id="feedback-section" class="mt-5">
+    </div>
+  </div>
   
     <footer class="p-5">
       <div class="container w-75 m-auto row p-5">

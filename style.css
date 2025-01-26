@@ -193,3 +193,24 @@ border-radius:100px;
     margin: 20px;
     border: none;
 }
+.feedback-container .stars .star {
+    font-size: 2rem;
+    cursor: pointer;
+    color: gray;
+    transition: color 0.3s;
+  }
+  
+  .feedback-container .stars .star:hover,
+  .feedback-container .stars .star.active {
+    color: gold;
+  }
+  
+  .feedback-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 200px;
+  }
+  
